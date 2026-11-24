@@ -38,7 +38,9 @@ public class Main {
             int arrivalTime= inp.nextInt();
             System.out.print("Enter the burst time of P"+(i+1)+": ");
             int burstTime= inp.nextInt();
-            Process p = new Process(i+1,arrivalTime,burstTime);
+            System.out.print("Enter the priority of P"+(i+1)+": ");
+            int priority= inp.nextInt();
+            Process p = new Process(i+1,arrivalTime,burstTime,priority);
             list.add(p);
            
     
